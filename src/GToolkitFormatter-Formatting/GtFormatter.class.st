@@ -124,8 +124,5 @@ GtFormatter >> setColumn: aNumber [
 
 { #category : #accessing }
 GtFormatter >> visit: anAst [
-	^ (anAst acceptVisitor: self) asOrderedCollection
-		addAll: (anAst comments
-				ifNil: [ {} ]
-				ifNotNil: [ :comments | comments collect: [ :each | ';' , (anAst completeSource copyFrom: each first to: each second) asString ] ]); yourself
+	^ anAst acceptVisitor: self
 ]
