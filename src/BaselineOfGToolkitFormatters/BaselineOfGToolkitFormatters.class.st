@@ -10,5 +10,5 @@ BaselineOfGToolkitFormatters >> baseline: spec [
 	spec
 		for: #common
 		do: [ spec package: 'GToolkitFormatter'.
-			spec package: 'GToolkitFormatter-Formatting' ]
+			spec package: 'GToolkitFormatter' ]
 ]
